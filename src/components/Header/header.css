@@ -1,0 +1,50 @@
+/* header.css */
+
+/* Styling the Navbar container */
+.navbar {
+  background-color: #147b89; /* Light background color */
+}
+
+/* Brand (My Portfolio) aligned to the left */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b6a8ff; /* Dark color for contrast */
+}
+
+/* Navbar navigation links */
+.navbar-nav .nav-link {
+  color: #007bff; /* Primary color for links */
+  margin-right: 1rem; /* Space between links */
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Container for aligning the navbar items */
+.container-fluid {
+  display: flex;
+  justify-content: space-between; /* Space between Brand and Nav links */
+  align-items: center;
+}
+
+/* Optional Button styling if uncommented */
+.button-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.button-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Adjust max height for the nav items if needed */
+.navbar-nav {
+  max-height: 100px;
+  overflow-y: auto; /* Adds scrolling if height is exceeded */
+}

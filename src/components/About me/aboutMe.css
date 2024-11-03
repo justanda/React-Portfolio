@@ -1,0 +1,16 @@
+.skill-circles {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+
+.skill-circle {
+  width: 100px;
+  text-align: center;
+}
+
+.skill-circle span {
+  display: block;
+  margin-top: 0.5em;
+  font-weight: bold;
+}
