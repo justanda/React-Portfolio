@@ -10,9 +10,8 @@ function Contact() {
   });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    setFormData({ ...formData, [e.target.email]: e.target.value });
-    setFormData({ ...formData, [e.target.message]: e.target.value });
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (e) => {
@@ -35,17 +34,21 @@ function Contact() {
                 value={formData.name}
                 onChange={handleChange}
               />
+            </Form.Group>
+            <Form.Group controlId="formEmail">
               <Form.Label>Email</Form.Label>
               <Form.Control
                 type="email"
-                email="email"
+                name="email"
                 value={formData.email}
                 onChange={handleChange}
               />
+            </Form.Group>
+            <Form.Group controlId="formMessage">
               <Form.Label>Message</Form.Label>
               <Form.Control
                 as="textarea"
-                message="message"
+                name="message"
                 value={formData.message}
                 onChange={handleChange}
               />

@@ -1,4 +1,7 @@
 import React from "react";
+import img2 from "../../assets/images/img2.png";
+import img1 from "../../assets/images/img1.png";
+import img3 from "../../assets/images/img3.png";
 import { Container, Row, Col, Card } from "react-bootstrap";
 // import "./Projects.css";
 const projects = [
@@ -6,32 +9,29 @@ const projects = [
     title: "Employee Database",
     description:
       "A employee database that allows you to view and manage employees.",
-    image:
-      "https://unsplash.com/photos/a-body-of-water-that-has-some-water-in-it-UwciTUlaIEk",
+    image: img2,
     link: "https://github.com/justanda",
   },
   {
-    title: "Budget Tracker",
+    title: "Vehichle Generator",
     description:
       "A budget tracker that allows you to track your expenses and income.",
-    image:
-      "https://unsplash.com/photos/a-body-of-water-that-has-some-water-in-it-UwciTUlaIEk",
+    image: img1,
     link: "https://github.com/justanda/Project-0",
   },
   {
-    title: "Weather Dashboard",
+    title: "Penny Pinchers Alpha",
     description:
-      "A weather dashboard that allows you to view the weather in different cities.",
-    image:
-      "https://unsplash.com/photos/a-body-of-water-that-has-some-water-in-it-UwciTUlaIEk",
-    // link: "
+      "An eccomerce site that allows you to view items ans purchase them.",
+    image: img3,
+    link: "",
   },
   {
-    title: "Work Day Scheduler",
+    title: "Weather Dashboard",
     description: "A work day scheduler that allows you to plan your day.",
     image:
       "https://unsplash.com/photos/a-body-of-water-that-has-some-water-in-it-UwciTUlaIEk",
-    // link: "
+    link: "",
   },
 ];
 
@@ -42,7 +42,12 @@ function Projects() {
         {projects.map((project, index) => (
           <Col lg={6} key={index}>
             <Card>
-              <Card.Img variant="top" src={project.image} alt={project.title} />
+              <Card.Img
+                variant="top"
+                src={project.image}
+                alt={project.title}
+                style={{ height: "200", width: "200" }}
+              />
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
                 <Card.Text>{project.description}</Card.Text>

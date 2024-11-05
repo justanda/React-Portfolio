@@ -19,26 +19,17 @@ function Footer() {
             <Row>
               <Col>
                 <p>
-                  <strong>Email:</strong>
-                  {/* <img
-                    src="/path/to/email-logo.png"
+                  <img
+                    src="https://t3.ftcdn.net/jpg/02/38/96/64/360_F_238966486_A5wEWiRNtuUm85Qxj5BM12hCDNrSS7yS.jpg"
                     alt="Email Logo"
                     style={{ width: "20px", marginRight: "5px" }}
-                  /> */}
-                  miranda.justin93@gmail.com
+                  />{" "}
+                  <a href="mailto:miranda.justin93@gmail.com">
+                    miranda.justin93@gmail.com
+                  </a>
                 </p>
               </Col>
-              <Col>
-                <p>
-                  <strong>Phone:</strong>
-                  {/* <img
-                    src="/path/to/phone-logo.png"
-                    alt="Phone Logo"
-                    style={{ width: "20px", marginRight: "5px" }}
-                  /> */}
-                  (303)-995-7058
-                </p>
-              </Col>
+
               <Col>
                 <p>
                   {""}
