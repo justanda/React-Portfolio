@@ -2,6 +2,8 @@ import React from "react";
 import img2 from "../../assets/images/img2.png";
 import img1 from "../../assets/images/img1.png";
 import img3 from "../../assets/images/img3.png";
+import img4 from "../../assets/images/img4.png";
+
 import { Container, Row, Col, Card } from "react-bootstrap";
 // import "./Projects.css";
 const projects = [
@@ -24,14 +26,13 @@ const projects = [
     description:
       "An eccomerce site that allows you to view items ans purchase them.",
     image: img3,
-    link: "",
+    link: "https://github.com/justanda/Project-0",
   },
   {
     title: "Weather Dashboard",
     description: "A work day scheduler that allows you to plan your day.",
-    image:
-      "https://unsplash.com/photos/a-body-of-water-that-has-some-water-in-it-UwciTUlaIEk",
-    link: "",
+    image: img4,
+    link: "https://github.com/justanda/Vehicle-Generator-2024",
   },
 ];
 
