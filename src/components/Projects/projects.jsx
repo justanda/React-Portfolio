@@ -3,6 +3,7 @@ import img2 from "../../assets/images/img2.png";
 import img1 from "../../assets/images/img1.png";
 import img3 from "../../assets/images/img3.png";
 import img4 from "../../assets/images/img4.png";
+import img5 from "../../assets/images/img5.png";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
 // import "./Projects.css";
@@ -33,6 +34,18 @@ const projects = [
     description: "A work day scheduler that allows you to plan your day.",
     image: img4,
     link: "https://github.com/justanda/Vehicle-Generator-2024",
+  },
+  {
+    title: "Candidate Search",
+    description: "A candidate search that allows you to search for candidates.",
+    image: img5,
+    link: "",
+  },
+  {
+    title: "Candidate Search",
+    description: "A candidate search that allows you to search for candidates.",
+    image: img5,
+    link: "",
   },
 ];
 
