@@ -4,7 +4,6 @@ import Contact from "../components/Contact/contact";
 const ContactPage = () => {
   return (
     <section id="contact" className="contact-page">
-      <h2></h2>
       <Contact />
     </section>
   );
