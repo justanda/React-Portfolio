@@ -3,16 +3,16 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 // import "./Contact.css"; // For custom CSS
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({ ...formData, [name]: value });
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,8 +31,8 @@ function Contact() {
               <Form.Control
                 type="text"
                 name="name"
-                value={formData.name}
-                onChange={handleChange}
+                // value={formData.name}
+                // onChange={handleChange}
               />
             </Form.Group>
             <Form.Group controlId="formEmail">
@@ -40,8 +40,8 @@ function Contact() {
               <Form.Control
                 type="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
+                // value={formData.email}
+                // onChange={handleChange}
               />
             </Form.Group>
             <Form.Group controlId="formMessage">
@@ -49,8 +49,8 @@ function Contact() {
               <Form.Control
                 as="textarea"
                 name="message"
-                value={formData.message}
-                onChange={handleChange}
+                // value={formData.message}
+                // onChange={handleChange}
               />
             </Form.Group>
             <Button variant="primary" type="submit">
