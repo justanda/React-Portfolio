@@ -21,10 +21,11 @@ function AboutMe() {
               tum. Nulla
             </p>
           </section>
+
           <Button
-            src="https://drive.google.com/file/d/1J9J9JsuV1eoQ7kNvgGkJsZJ/view?usp=sharing"
-            // href={resume}
+            style={{ marginTop: 20 }}
             target="_blank"
+            href="https://docs.google.com/document/d/1ySToPSqwfbvpZFY11vNxtcJ0_a_5z47XYVY_jJNYDnA/edit?usp=sharing"
             rel="noopener noreferrer"
           >
             View Resume

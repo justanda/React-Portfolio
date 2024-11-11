@@ -1,6 +1,8 @@
+![GitHub License](https://img.shields.io/badge/license-MIT)
+
 # My React Portfolio
 
-![GitHub License](https://img.shields.io/badge/license-MIT)
+---
 
 A responsive and interactive portfolio built with React and React-Bootstrap, showcasing my skills, projects, and contact information.
 
@@ -8,11 +10,10 @@ A responsive and interactive portfolio built with React and React-Bootstrap, sho
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
+- [Demo](#demo)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -30,18 +31,22 @@ A responsive and interactive portfolio built with React and React-Bootstrap, sho
 - **CSS** - Additional custom styling.
 - **Font Awesome** - Icons for social links and other UI elements.
 
+## Demo
+
+Click [Here](https://voluble-cocada-c626a7.netlify.app/) to view a demo
+
 ## Getting Started
 
 ### Prerequisites
 
 - **Node.js** - Make sure you have Node.js installed on your machine.
-- **npm or yarn** - A package manager for installing dependencies.
+- **npm** - A package manager for installing dependencies.
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/react-portfolio.git
+   git clone https://github.com/justanda/React-Portfolio
    ```
 2. Navigate to the project directory:
    ```bash
@@ -55,7 +60,11 @@ A responsive and interactive portfolio built with React and React-Bootstrap, sho
    ```bash
    npm start
    ```
-5. Open your browser and go to `http://localhost:3000` to view the application.
+5. Open your browser and go to
+
+   ```
+   http://localhost:3000
+   ```
 
 ## Usage
 
@@ -69,12 +78,14 @@ This portfolio showcases my work and experience. Users can:
 
 If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
 
-1. Fork the project
-2. Create a feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
+1.  Fork the project
+2.  Create a feature branch (`git checkout -b feature/YourFeature`)
+3.  Commit your changes (`git commit -m 'Add some feature'`)
+4.  Push to the branch (`git push origin feature/YourFeature`)
+5.  Open a Pull Request
 
-## License
+    ## Contributors
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+###### Justin Mranda-[GitHub](https://github.com/justanda) -[Website](https://voluble-cocada-c626a7.netlify.app/) -[Email](mailto:miranda.justin93@gmail.com)
+
+---
