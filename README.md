@@ -33,7 +33,7 @@ A responsive and interactive portfolio built with React and React-Bootstrap, sho
 
 ## Demo
 
-Click [Here](https://voluble-cocada-c626a7.netlify.app/) to view a demo
+Click [Here](https://justinmirandaportfollio.netlify.app/) to view a demo
 
 ## Getting Started
 
@@ -86,6 +86,6 @@ If you'd like to contribute, please fork the repository and use a feature branch
 
     ## Contributors
 
-###### Justin Mranda-[GitHub](https://github.com/justanda) -[Website](https://voluble-cocada-c626a7.netlify.app/) -[Email](mailto:miranda.justin93@gmail.com)
+###### Justin Mranda-[GitHub](https://github.com/justanda) -[Website](https://justinmirandaportfollio.netlify.app/) -[Email](mailto:miranda.justin93@gmail.com)
 
 ---
