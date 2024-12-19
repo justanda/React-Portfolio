@@ -8,7 +8,7 @@ function NavScrollExample() {
         <Navbar.Brand href="/">Justin Miranda</Navbar.Brand>
         <Nav
           expand="lg"
-          className="bg-body-tertiary"
+          className="bg-body-tertiary justify-content-end text-center fixed-top"
           style={{ maxHeight: "100px" }}
         >
           <Nav.Link href="/">Home</Nav.Link>

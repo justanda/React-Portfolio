@@ -1,0 +1,50 @@
+.project-card {
+  height: 450px; /* Set a consistent height for all cards */
+  width: 100%; /* Allow cards to be responsive */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-image {
+  height: 300px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images fill the space without distortion */
+  border-radius: 20px;
+}
+
+.project-card {
+  height: 500px; /* Set consistent height for the card */
+  width: 100%; /* Responsive width */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center items horizontally */
+  padding: 20px; /* Add internal spacing */
+}
+
+.project-card .project-link {
+  display: inline-block; /* Ensure button has intrinsic size */
+  padding: 10px 20px; /* Add consistent padding */
+  font-size: 16px; /* Readable font size */
+  font-weight: 500; /* Medium boldness */
+  color: white; /* White text for contrast */
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none; /* Remove default borders */
+  border-radius: 25px; /* Rounded edges */
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  text-align: center; /* Center text */
+  margin-top: auto; /* Push the button to the bottom of the card */
+}
+
+.project-card .project-link:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  display: inline-block; /* Ensure button has intrinsic size */
+  align-items: center /* Center items horizontally */;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transform: translateY(-3px); /* Lift effect */
+}

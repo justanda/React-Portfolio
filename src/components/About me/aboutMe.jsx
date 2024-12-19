@@ -13,12 +13,14 @@ function AboutMe() {
           <section style={{ marginTop: 20 }}>
             <h2>About Me</h2>
             <p>
-              leorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              venenatis, dolor in finibus malesuada, est erat fermentum arcu,
-              sit amet finibus arcu ex nec libero. Nullam nec dui sed elit
-              bibendsum varius. Nulla facilisi. Donec nec quam eu elit fermentum
-              fermentum. Nulla facilisi. Donec nec quam eu elit fermentum fermen
-              tum. Nulla
+              Passionate and driven software developer with a background in
+              business development and digital media. Recently completed a
+              coding bootcamp at the University of Denver, gaining proficiency
+              in full-stack web development including HTML, CSS, JavaScript,
+              Node.js, React.js, SQL, and MongoDB. Recognized for strong
+              problem-solving skills, a collaborative mindset, and a commitment
+              to continuous learning. Eager to contribute to innovative
+              development teams and grow into a senior developer role over time.
             </p>
           </section>
 
@@ -37,14 +39,15 @@ function AboutMe() {
               boxShadow: "0 0 20px 0 rgba(0, 0, 98, 0.2)",
               display: "block",
               flexWrap: "wrap",
-              width: "500px",
-              height: "550px",
+              width: "400px",
+              height: "450px",
               marginTop: 20,
               marginLeft: 20,
               marginRight: 20,
-              // borderRadius: -20,
+              borderRadius: 30,
+              border: "2px solid #f2f2f2",
             }}
-            src="https://scontent-den2-1.xx.fbcdn.net/v/t1.6435-9/120754393_4659579734114098_8147633671436053647_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=53a332&_nc_ohc=1dj9JsuV1eoQ7kNvgGkJsZJ&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=ADwwf0xD4P1Oq6iMcmdk2hS&oh=00_AYDevoOvV1ETpv7NhGV3N8NxYEjnNpiQRvm6xoWr80v2_A&oe=674E4960"
+            src="https://scontent-den2-1.xx.fbcdn.net/v/t1.6435-9/120559588_4659629397442465_1999105587500350450_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=DrH0zy9deCwQ7kNvgHPmpHx&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=Au0jP2LsnibwjG3F0qiydJ-&oh=00_AYC3_J-ZVLyEy25spfi-Dobz53IGQqQqfXlJHrYnYD9CKQ&oe=678AB822"
             alt="Justin 
           Miranda"
           />

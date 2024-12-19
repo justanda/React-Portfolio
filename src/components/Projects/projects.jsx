@@ -4,9 +4,11 @@ import img1 from "../../assets/images/img1.png";
 import img3 from "../../assets/images/img3.png";
 import img4 from "../../assets/images/img4.png";
 import img5 from "../../assets/images/img5.png";
+import img6 from "../../assets/images/img6.png";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
-// import "./Projects.css";
+import "./Projects.css"; // Import the new CSS file
+
 const projects = [
   {
     title: "Employee Database",
@@ -25,7 +27,7 @@ const projects = [
   {
     title: "Penny Pinchers Alpha",
     description:
-      "An eccomerce site that allows you to view items ans purchase them.",
+      "An ecommerce site that allows you to view items and purchase them.",
     image: img3,
     link: "https://github.com/justanda/Project-0",
   },
@@ -42,9 +44,10 @@ const projects = [
     link: "",
   },
   {
-    title: "Candidate Search",
-    description: "A candidate search that allows you to search for candidates.",
-    image: img5,
+    title: "Penny Pinchers Alpha",
+    description:
+      "Refactored to React, this ecommerce site allows you to view items and purchase them.",
+    image: img6,
     link: "",
   },
 ];
@@ -55,12 +58,12 @@ function Projects() {
       <Row>
         {projects.map((project, index) => (
           <Col lg={6} key={index}>
-            <Card>
+            <Card className="project-card">
               <Card.Img
                 variant="top"
                 src={project.image}
                 alt={project.title}
-                style={{ height: "200", width: "200" }}
+                className="project-image"
               />
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
@@ -69,6 +72,8 @@ function Projects() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="project-link"
+                  style={{ display: project.link ? "block" : "none" }}
                 >
                   View Project
                 </a>
