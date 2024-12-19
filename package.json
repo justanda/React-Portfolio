@@ -2,6 +2,10 @@
   "name": "client",
   "private": true,
   "version": "0.0.0",
+  "description": "A Vite + React project",
+  "author": "Justin Miranda",
+  "license": "MIT",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "vite",

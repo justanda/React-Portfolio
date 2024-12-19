@@ -7,7 +7,7 @@ import img5 from "../../assets/images/img5.png";
 import img6 from "../../assets/images/img6.png";
 
 import { Container, Row, Col, Card } from "react-bootstrap";
-import "./Projects.css"; // Import the new CSS file
+import "./projects.css";
 
 const projects = [
   {
