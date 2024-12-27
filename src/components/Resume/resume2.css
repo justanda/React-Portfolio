@@ -1,0 +1,92 @@
+.sectionTitle {
+  font-size: 56px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  border-left: 5px solid #007bff;
+  padding-left: 15px;
+}
+
+#Card1 {
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(145deg, #f4f4f4, #ffffff);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
+    -5px -5px 15px rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+#Card1:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(145deg, #ffffff, #f4f4f4);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(255, 255, 255, 0.8);
+}
+
+.cardText {
+  font-size: 16px;
+  color: #444444;
+  line-height: 1.6;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.cardSubtitle {
+  font-size: 18px;
+  color: #333333;
+  font-weight: 600;
+}
+
+.cardRed {
+  background-color: #fff0f0;
+  border: 2px solid #ff4d4d;
+  border-radius: 10px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.cardRed:hover {
+  background-color: #ff4d4d;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.cardBlue {
+  background-color: #f0f5ff;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.cardBlue:hover {
+  background-color: #007bff;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.downloadButton {
+  background: #007bff;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 15px 40px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.downloadButton:hover {
+  background: #0056b3;
+  box-shadow: 0 4px 15px rgba(0, 91, 179, 0.3);
+}

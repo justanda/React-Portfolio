@@ -1,16 +1,132 @@
-.skill-circles {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  transition: all 0.5s ease;
+}
+
+.about-me-container {
+  padding: 40px 20px;
   display: flex;
-  gap: 1.5em;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.skill-circle {
-  width: 100px;
+.about-me-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  animation: fadeInUp 1s ease;
+}
+
+.about-me-card h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  color: #007bff;
+  margin-bottom: 1rem;
   text-align: center;
+  letter-spacing: 1px;
 }
 
-.skill-circle span {
-  display: block;
-  margin-top: 0.5em;
-  font-weight: bold;
+.about-me-card p {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.6;
+  text-align: justify;
+  color: #555;
+}
+
+.resume-button {
+  background: linear-gradient(90deg, #007bff, #495057);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.resume-button:hover {
+  background: linear-gradient(90deg, #495057, #ff5722);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image {
+  box-shadow: 0 0 20px rgba(0, 0, 98, 0.2);
+  width: 350px;
+  height: 400px;
+  margin: 20px;
+  border-radius: 25px;
+  border: 4px dashed #9ba7b4;
+  transition: all 0.5s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me-container {
+    padding: 20px 10px;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-me-card {
+    padding: 15px;
+  }
+
+  .resume-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me-card {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .resume-button {
+    padding: 8px 16px;
+  }
 }

@@ -1,0 +1,12 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(250, 225, 160);
+  background-image: url("https://img.freepik.com/premium-photo/cartoon-illustration-skateboard-park-with-words-bleachers-bottom_1329833-345.jpg");
+  background-size: cover;
+  background-position: center;
+  color: aquamarine;
+}

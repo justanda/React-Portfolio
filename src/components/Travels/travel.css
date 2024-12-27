@@ -1,0 +1,34 @@
+.travel-gallery {
+  padding: 2rem;
+  text-align: center;
+}
+
+.travel-gallery h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.photo-card {
+  margin: 1rem 0;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.load-more-button {
+  margin-top: 2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.load-more-button:hover {
+  background-color: #0056b3;
+}

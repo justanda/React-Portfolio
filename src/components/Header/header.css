@@ -1,50 +1,132 @@
-/* header.css */
-
-/* Styling the Navbar container */
-.navbar {
-  background-color: #147b89; /* Light background color */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Brand (My Portfolio) aligned to the left */
+body {
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #f8f9fa
+  ); /* Subtle gradient background */
+  font-family: "Roboto", sans-serif; /* Clean, modern font */
+  color: #333; /* Standard text color */
+  transition: all 0.5s ease; /* Smooth background transition */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: #f8f9fa; /* Slightly lighter background on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Navbar Brand */
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #01759bb3; /* Dark color for contrast */
+  color: #333;
+  text-decoration: none;
+  letter-spacing: 1px; /* Clean letter spacing */
+  transition: color 0.3s ease;
 }
 
-/* Navbar navigation links */
-.navbar-nav .nav-link {
-  color: #007bff; /* Primary color for links */
-  margin-right: 1rem; /* Space between links */
+.navbar-brand:hover {
+  color: #007bff; /* Highlight on hover */
+}
+
+/* Navigation Links */
+.nav-link {
+  color: #555;
+  font-size: 1rem;
+  margin: 0 1rem;
+  text-transform: uppercase;
   font-weight: 500;
+  letter-spacing: 0.5px; /* Improve spacing */
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #0056b3; /* Darker blue on hover */
-  text-decoration: underline; /* Underline effect on hover */
+.nav-link:hover {
+  color: #007bff; /* Highlight on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
 }
 
-/* Container for aligning the navbar items */
-.container-fluid {
+.nav {
+  align-items: center; /* Align items vertically */
   display: flex;
-  justify-content: space-between; /* Space between Brand and Nav links */
-  align-items: center;
+  gap: 1rem; /* Add space between links */
+}
+/* 
+.hero {
+ 
+  background-image: url(${coverimg});
+  text-align: center;
+  padding: 100px 20px;
+} */
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  /margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 
-/* Optional Button styling if uncommented */
-.button-outline-primary {
-  color: #007bff;
-  border-color: #007bff;
+.hero p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin-bottom: 1.5rem;
 }
 
-.button-outline-primary:hover {
-  background-color: #007bff;
+/* Buttons */
+.resume-button {
+  background: linear-gradient(90deg, #007bff, #495057);
   color: #fff;
-  border-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
 }
 
-/* Adjust max height for the nav items if needed */
-.navbar-nav {
-  max-height: 100px;
-  overflow-y: auto; /* Adds scrolling if height is exceeded */
+.resume-button:hover {
+  background: linear-gradient(90deg, #495057, #ff5722);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 0.5rem; /* Reduce padding */
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column; /* Stack links */
+    gap: 0.5rem; /* Adjust spacing */
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem; /* Smaller brand size */
+    margin-bottom: 0.5rem;
+  }
+
+  .hero {
+    padding: 50px 10px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 0.8rem; /* Smaller link font size */
+  }
+
+  .hero h1 {
+    font-size: 2rem; /* Smaller heading */
+  }
 }

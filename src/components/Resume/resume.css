@@ -1,0 +1,93 @@
+.sectionTitle {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 50px;
+  font-family: "Amatic SC";
+}
+#Card1 {
+  border-radius: 30px;
+  padding: 20px;
+  width: 100%;
+  font-family: "Amatic SC";
+  margin-bottom: 80px;
+  align-items: left;
+  color: blue;
+}
+#Card1:hover {
+  background-color: transparent;
+  border-radius: 30px;
+  color: black;
+  padding: 15px;
+  width: 90%;
+  font-family: "Nunito Sans";
+  transition: 0.5s;
+  .cardSubtitle {
+    color: green;
+  }
+}
+
+.cardText {
+  font-size: 20px;
+  color: green;
+}
+.cardTitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+.cardSubtitle {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.cardText {
+  font-size: 20px;
+  color: black;
+}
+.cardRed {
+  background-color: "transparent";
+  border-radius: 30px;
+  padding: 20px;
+  width: 50%;
+  font-family: "Amatic SC";
+  margin-bottom: 80px;
+  align-items: left;
+}
+.cardRed:hover {
+  background-color: #b9102f;
+  color: white;
+  border-radius: 30px;
+  padding: 15px;
+  width: 90%;
+  font-family: "Nunito Sans";
+  transition: 0.5s;
+}
+.cardBlue {
+  background-color: "transparent";
+  border-radius: 30px;
+  padding: 20px;
+  width: 50%;
+  font-family: "Amatic SC";
+  margin-bottom: 80px;
+  align-items: left;
+}
+.cardBlue:hover {
+  background-color: #1610a8;
+  color: white;
+  border-radius: 30px;
+  padding: 15px;
+  width: 90%;
+  font-family: "Nunito Sans";
+  transition: 0.5s;
+}
+.downloadButton {
+  background-color: #b9102f;
+  color: white;
+  border-radius: 30px;
+  padding: 20px;
+  width: 20%;
+  font-family: "Amatic SC";
+  margin-bottom: 80px;
+  align-items: left;
+}

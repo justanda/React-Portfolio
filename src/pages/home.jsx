@@ -1,24 +1,11 @@
 import React from "react";
-import AboutMe from "../components/About me/aboutMe.jsx";
-import { Card, Container, Row } from "react-bootstrap";
+import Intro from "../components/splash/splash";
+import "./home.css";
 
-const homePage = () => {
-  return (
-    <Container>
-      <Card>
-        <section id="home" className="home">
-          <Row>
-            {/* <h1 class="text-center"> Justin Miranda Portfolio</h1> */}
-          </Row>
-          {/* <p className="text-center">
-            I’m a full-stack developer with a passion for building web
-            applications.
-          </p> */}
-          <AboutMe />
-        </section>
-      </Card>
-    </Container>
-  );
-};
+const Home = () => (
+  <section id="home" className="home-page">
+    <Intro />
+  </section>
+);
 
-export default homePage;
+export default Home;

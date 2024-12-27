@@ -10,8 +10,9 @@ function Footer() {
     >
       <Container
         fluid
-        className="bg-body-tertiary"
+        // className="bg-body-tertiary"
         style={{ maxWidth: "800px", margin: "0 auto" }}
+        background-color="transparent"
       >
         <Row className="justify-content-center">
           <Col md={12}>
@@ -19,13 +20,12 @@ function Footer() {
             <Row>
               <Col>
                 <p>
-                  <img
-                    src="https://t3.ftcdn.net/jpg/02/38/96/64/360_F_238966486_A5wEWiRNtuUm85Qxj5BM12hCDNrSS7yS.jpg"
-                    alt="Email Logo"
-                    style={{ width: "20px", marginRight: "5px" }}
-                  />{" "}
                   <a href="mailto:miranda.justin93@gmail.com">
-                    miranda.justin93@gmail.com
+                    <img
+                      src="https://t3.ftcdn.net/jpg/02/38/96/64/360_F_238966486_A5wEWiRNtuUm85Qxj5BM12hCDNrSS7yS.jpg"
+                      alt="Email Logo"
+                      style={{ width: "50px", marginRight: "50px" }}
+                    />
                   </a>
                 </p>
               </Col>
@@ -34,33 +34,33 @@ function Footer() {
                 <p>
                   {""}
                   {/* <strong>LinkedIn:</strong> */}
-                  <img
-                    src="https://logos-world.net/wp-content/uploads/2020/05/Linkedin-Logo-700x394.png"
-                    style={{ width: "20px", marginRight: "5px" }}
-                  />
+
                   <a
                     href="https://www.linkedin.com/in/justin-miranda-014703204/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Justin Miranda
+                    <img
+                      src="https://logos-world.net/wp-content/uploads/2020/05/Linkedin-Logo-700x394.png"
+                      style={{ width: "50px", marginRight: "50px" }}
+                    />
                   </a>
                 </p>
               </Col>
               <Col>
                 <p>
                   {/* <strong>GitHub:</strong>{" "} */}
-                  <img
-                    src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
-                    alt="GitHub Logo"
-                    style={{ width: "20px", marginRight: "5px" }}
-                  />
+
                   <a
                     href="https://github.com/justanda"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    justanda
+                    <img
+                      src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                      alt="GitHub Logo"
+                      style={{ width: "50px", marginRight: "50px" }}
+                    />{" "}
                   </a>
                 </p>
               </Col>
