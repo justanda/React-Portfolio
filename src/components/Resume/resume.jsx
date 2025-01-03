@@ -47,11 +47,11 @@ const Resume = () => {
     <Container className="resumeContainer">
       <Row className="text-center mb-4">
         <Col>
-          <Button onClick={switchStyleSheet} className="switchButton">
+          {/* <Button onClick={switchStyleSheet} className="switchButton">
             {styleSheet === "resume.css"
               ? "Switch to Alternate Style"
               : "Switch to Default Style"}
-          </Button>
+          </Button> */}
         </Col>
       </Row>
 
