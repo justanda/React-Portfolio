@@ -17,11 +17,11 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbz2tvyYXBINfdXi3o_DBCR3vVyOmY1HwRPJJWB2c99he34VOWbXZOJ5re3BEiKcxuKA/exec";
+    const formActionURL =
+      "https://formsubmit.co/03f137935826dc63b17966b00301707e";
 
     try {
-      const response = await fetch(scriptURL, {
+      const response = await fetch(formActionURL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -33,16 +33,11 @@ const Contact = () => {
         throw new Error(`Error: ${response.status}`);
       }
 
-      const data = await response.json();
-      console.log("Response:", data);
-
-      if (data.success) {
-        alert("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" });
-      }
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       console.error("Error:", error.message);
-      alert("Failed to send message. Please check your configuration.");
+      alert("Failed to send message.");
     }
   };
 
