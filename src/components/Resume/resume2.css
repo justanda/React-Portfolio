@@ -1,92 +1,86 @@
+/* General Layout */
+.resumeContainer {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  font-family: "Nunito Sans", sans-serif;
+  color: #333;
+}
+
+/* Section Titles */
 .sectionTitle {
-  font-size: 56px;
+  font-size: 2rem;
   font-weight: bold;
-  color: #1a1a1a;
-  margin-bottom: 50px;
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  text-align: left;
-  border-left: 5px solid #007bff;
-  padding-left: 15px;
+  color: #007bff;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #007bff;
 }
 
+/* Cards */
 #Card1 {
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 20px;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(145deg, #f4f4f4, #ffffff);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
-    -5px -5px 15px rgba(255, 255, 255, 0.7);
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-
 #Card1:hover {
-  transform: translateY(-10px);
-  background: linear-gradient(145deg, #ffffff, #f4f4f4);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
-    -5px -5px 15px rgba(255, 255, 255, 0.8);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Text Styling */
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0056b3;
+}
+.cardSubtitle {
+  font-size: 1rem;
+  color: #555;
+}
 .cardText {
-  font-size: 16px;
-  color: #444444;
+  font-size: 1rem;
+  color: #333;
   line-height: 1.6;
 }
 
-.cardTitle {
-  font-size: 24px;
-  font-weight: bold;
-  color: #007bff;
-}
-
-.cardSubtitle {
-  font-size: 18px;
-  color: #333333;
-  font-weight: 600;
-}
-
-.cardRed {
-  background-color: #fff0f0;
-  border: 2px solid #ff4d4d;
+/* Progress Bar */
+.progressBar {
+  background-color: #e9ecef;
   border-radius: 10px;
-  padding: 15px;
-  transition: all 0.3s ease;
+  height: 1.25rem;
 }
-
-.cardRed:hover {
-  background-color: #ff4d4d;
-  color: #ffffff;
-  transform: scale(1.05);
-}
-
-.cardBlue {
-  background-color: #f0f5ff;
-  border: 2px solid #007bff;
-  border-radius: 10px;
-  padding: 15px;
-  transition: all 0.3s ease;
-}
-
-.cardBlue:hover {
+.progress-bar {
   background-color: #007bff;
-  color: #ffffff;
-  transform: scale(1.05);
 }
 
+/* Buttons */
 .downloadButton {
-  background: #007bff;
-  color: #ffffff;
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
   border-radius: 30px;
-  padding: 15px 40px;
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  border: none;
+  transition: background-color 0.3s;
+}
+.downloadButton:hover {
+  background-color: #0056b3;
 }
 
-.downloadButton:hover {
-  background: #0056b3;
-  box-shadow: 0 4px 15px rgba(0, 91, 179, 0.3);
+/* Education Cards */
+.cardRed {
+  background-color: #f8d7da;
+  border-left: 5px solid #b9102f;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.cardBlue {
+  background-color: #d4edda;
+  border-left: 5px solid #1610a8;
+  padding: 1rem;
+  border-radius: 10px;
 }

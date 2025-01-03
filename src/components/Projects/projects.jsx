@@ -1,6 +1,6 @@
 import React from "react";
-import img2 from "../../assets/images/img2.png";
 import img1 from "../../assets/images/img1.png";
+import img2 from "../../assets/images/img2.png";
 import img3 from "../../assets/images/img3.png";
 import img4 from "../../assets/images/img4.png";
 import img5 from "../../assets/images/img5.png";
@@ -41,14 +41,14 @@ const projects = [
     title: "Candidate Search",
     description: "A candidate search that allows you to search for candidates.",
     image: img5,
-    link: "",
+    link: "https://github.com/justanda/Candidate-Search",
   },
   {
     title: "Penny Pinchers Alpha",
     description:
       "Refactored to React, this ecommerce site allows you to view items and purchase them.",
     image: img6,
-    link: "",
+    link: "https://github.com/benjaminmachock/penny-pinchers-dev",
   },
 ];
 

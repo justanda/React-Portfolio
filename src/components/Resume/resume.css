@@ -12,7 +12,6 @@
   font-family: "Amatic SC";
   margin-bottom: 80px;
   align-items: left;
-  color: blue;
 }
 #Card1:hover {
   background-color: transparent;
@@ -32,7 +31,7 @@
   color: green;
 }
 .cardTitle {
-  font-size: 30px;
+  font-size: 70px;
   font-weight: bold;
   color: black;
 }

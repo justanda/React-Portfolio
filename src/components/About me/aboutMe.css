@@ -68,11 +68,11 @@ body {
 
 .profile-image {
   box-shadow: 0 0 20px rgba(0, 0, 98, 0.2);
-  width: 350px;
+  width: 450px;
   height: 400px;
   margin: 20px;
   border-radius: 25px;
-  border: 4px dashed #9ba7b4;
+  border: 4px dashed #9ba7b4 transparent 20%;
   transition: all 0.5s ease;
 }
 

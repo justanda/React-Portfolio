@@ -1,17 +1,12 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
 import "./aboutMe.css";
-// import aboutme from "./aboutme.jpg";
+import aboutme from "../../assets/images/aboutme.jpeg";
 
 function AboutMe() {
   return (
     <Container className="about-me-container">
-      <img
-        className="profile-image"
-        // src={aboutme}
-        src="https://scontent-den2-1.xx.fbcdn.net/v/t1.6435-9/120559588_4659629397442465_1999105587500350450_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=DrH0zy9deCwQ7kNvgHPmpHx&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=Au0jP2LsnibwjG3F0qiydJ-&oh=00_AYC3_J-ZVLyEy25spfi-Dobz53IGQqQqfXlJHrYnYD9CKQ&oe=678AB822"
-        alt="Justin Miranda"
-      />
+      <img className="profile-image" src={aboutme} alt="Justin Miranda" />
 
       <div className="about-me-card">
         <h2>About Me</h2>

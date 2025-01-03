@@ -1,34 +1,78 @@
+/* General Gallery Styling */
+/* Fallback Image Styling */
+.fallback-image {
+  max-width: 400px; /* Restrict maximum size for a clean look */
+  width: 100%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  object-fit: cover; /* Ensure the image scales proportionally */
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Ensure image takes up only necessary space */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.fallback-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
 .travel-gallery {
   padding: 2rem;
   text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  align-items: center;
 }
 
-.travel-gallery h2 {
+.gallery-title {
   font-size: 2rem;
   color: #007bff;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
+/* Card Styling */
 .photo-card {
-  margin: 1rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .gallery-image {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
 }
 
+/* Button Styling */
 .load-more-button {
   margin-top: 2rem;
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .load-more-button:hover {
   background-color: #0056b3;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .photo-card .gallery-image {
+    height: 150px;
+  }
+  /* Fallback Image Styling */
 }

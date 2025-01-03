@@ -1,89 +1,54 @@
-// import React, { useState } from "react";
-// import { Container, Row, Col, Button } from "react-bootstrap";
-// import "./travel.css";
-
-// const TravelGallery = () => {
-//   const imagePool = [
-//     "path//to/travels00030.jpeg",
-//     "path//to/travels00031.jpeg",
-//   ];
-
-//   const [gallery, setGallery] = useState([]);
-
-//   const loadRandomPhotos = () => {
-//     const randomPhotos = Array.from(
-//       { length: 6 },
-//       () => imagePool[Math.floor(Math.random() * imagePool.length)]
-//     );
-//     setGallery(randomPhotos);
-//   };
-
-//   React.useEffect(() => {
-//     loadRandomPhotos();
-//   }, []);
-
-//   return (
-//     <Container className="travel-gallery">
-//       <h2>Travel Photo Gallery</h2>
-//       <Row>
-//         {gallery.map((photo, index) => (
-//           <Col key={index} xs={12} sm={6} md={4}>
-//             <div className="photo-card">
-//               <img
-//                 src={photo}
-//                 alt={`Travel ${index + 1}`}
-//                 className="gallery-image"
-//               />
-//             </div>
-//           </Col>
-//         ))}
-//       </Row>
-//       <Button
-//         onClick={loadRandomPhotos}
-//         variant="primary"
-//         className="load-more-button"
-//       >
-//         Load More Photos
-//       </Button>
-//     </Container>
-//   );
-// };
-
-// export default TravelGallery;
-
-// TravelGallery component: TravelGallery.tsx
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
-import travelData from "../../data/travel.json";
+import { Container, Card, Button } from "react-bootstrap";
+import "./travel.css";
+import coverImg from "../../assets/images/cover/coverImg.jpg";
 
 const TravelGallery = () => {
+  const [images, setImages] = useState([]);
   const [gallery, setGallery] = useState([]);
 
+  const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
+
   const loadRandomPhotos = () => {
-    const randomPhotos = Array.from({ length: 6 }, () => travelData.images);
-    setGallery(randomPhotos);
+    if (images.length > 0) {
+      const shuffledImages = shuffleArray([...images]);
+      setGallery(shuffledImages.slice(0, 6));
+    }
   };
 
   useEffect(() => {
-    loadRandomPhotos();
+    const imageModules = import.meta.glob(
+      "../../assets/images/travels/*.{png,jpg,jpeg,svg}"
+    );
+    const imagePromises = Object.keys(imageModules).map((key) =>
+      imageModules[key]().then((module) => module.default)
+    );
+
+    Promise.all(imagePromises).then((loadedImages) => {
+      setImages(loadedImages);
+      loadRandomPhotos();
+    });
   }, []);
 
   return (
     <Container className="travel-gallery">
-      <h2>Travel Photo Gallery</h2>
-      <Row>
-        {gallery.map((photo, index) => (
-          <Col key={index} xs={12} sm={6} md={4}>
-            <div className="photo-card">
-              <img
+      <h2 className="gallery-title">Travel Photo Gallery</h2>
+      {gallery.length > 0 ? (
+        <div className="d-flex flex-wrap justify-content-center">
+          {gallery.map((photo, index) => (
+            <Card className="photo-card" key={index}>
+              <Card.Img
+                variant="top"
                 src={photo}
                 alt={`Travel ${index + 1}`}
                 className="gallery-image"
               />
-            </div>
-          </Col>
-        ))}
-      </Row>
+            </Card>
+          ))}
+        </div>
+      ) : (
+        <img className="fallback-image" src={coverImg} alt="Loading..." />
+      )}
       <Button
         onClick={loadRandomPhotos}
         variant="primary"
