@@ -66,24 +66,38 @@
 /* Small Devices (Mobile Phones, 320px and up) */
 @media (max-width: 480px) {
   .intro-container {
-    padding: 0 10px;
+    padding: 0 15px; /* Add padding to prevent text touching edges */
+    height: auto; /* Allow content to adjust dynamically */
   }
 
   .animated-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Slightly smaller, but still readable */
+    line-height: 1.2; /* Adjust line height for better spacing */
+    margin-bottom: 10px; /* Add spacing below the title */
   }
 
   .fade-in-paragraph {
-    font-size: 0.9rem;
+    font-size: 1rem; /* Keep the paragraph text clear and readable */
+    margin-top: 10px;
+    margin-bottom: 20px; /* Add spacing for better layout */
   }
 
   .hover-effect {
-    font-size: 0.9rem;
+    font-size: 1rem; /* Keep the button text readable */
+    padding: 8px 20px; /* Slightly smaller button for mobile */
+    border-radius: 20px; /* Keep button rounded */
   }
 
   .zoom-image {
-    width: 120px;
-    margin-top: 200px;
+    width: 180px; /* Increase skateboard size for better visibility */
+    height: auto;
+    margin-top: 100px; /* Bring it closer to the content */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .enter-button {
+    margin-top: 15px; /* Slightly reduce button spacing */
   }
 }
 
@@ -156,5 +170,12 @@
   .zoom-image {
     width: 220px;
     margin-top: 320px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ffffff;
   }
 }
