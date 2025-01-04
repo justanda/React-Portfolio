@@ -4,12 +4,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   color: white;
   overflow: hidden;
   animation: background-slide 10s ease infinite;
-  padding: 0 40px; /* Ensure padding for smaller screens */
+  padding: 0 20px; /* General padding for all devices */
 }
 
 .intro-content {
@@ -44,12 +44,12 @@
 }
 
 .zoom-image {
-  margin-top: 300px;
+  margin-top: 150px;
   width: 200px;
   height: auto;
   cursor: pointer;
   transform-origin: center;
-  transition: transform 0.13s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Skateboard Animation */
@@ -61,43 +61,40 @@
   transform-origin: center;
 }
 
-/* Media Queries */
+/* Responsive Design */
 
 /* Small Devices (Mobile Phones, 320px and up) */
 @media (max-width: 480px) {
   .intro-container {
-    padding: 0 15px; /* Add padding to prevent text touching edges */
-    height: auto; /* Allow content to adjust dynamically */
+    padding: 0 10px;
+    min-height: auto;
   }
 
   .animated-text {
-    font-size: 1.8rem; /* Slightly smaller, but still readable */
-    line-height: 1.2; /* Adjust line height for better spacing */
-    margin-bottom: 10px; /* Add spacing below the title */
+    margin-top: 20%;
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
   }
 
   .fade-in-paragraph {
-    font-size: 1rem; /* Keep the paragraph text clear and readable */
-    margin-top: 10px;
-    margin-bottom: 20px; /* Add spacing for better layout */
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
   }
 
   .hover-effect {
-    font-size: 1rem; /* Keep the button text readable */
-    padding: 8px 20px; /* Slightly smaller button for mobile */
-    border-radius: 20px; /* Keep button rounded */
+    font-size: 1rem;
+    padding: 8px 20px;
   }
 
   .zoom-image {
-    width: 180px; /* Increase skateboard size for better visibility */
-    height: auto;
-    margin-top: 100px; /* Bring it closer to the content */
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+    width: 240px;
+    margin-top: 60px; /* Bring skateboard closer to the content */
   }
 
   .enter-button {
-    margin-top: 15px; /* Slightly reduce button spacing */
+    margin-top: 10px;
   }
 }
 
@@ -105,34 +102,12 @@
 @media (max-width: 768px) {
   .intro-container {
     padding: 0 20px;
-  }
-
-  .animated-text {
-    font-size: 2rem;
-  }
-
-  .fade-in-paragraph {
-    font-size: 1rem;
-  }
-
-  .hover-effect {
-    font-size: 1rem;
-  }
-
-  .zoom-image {
-    width: 150px;
-    margin-top: 250px;
-  }
-}
-
-/* Large Devices (Laptops, 1024px and up) */
-@media (max-width: 1024px) {
-  .intro-container {
-    padding: 0 30px;
+    min-height: 100vh;
   }
 
   .animated-text {
     font-size: 2.2rem;
+    line-height: 1.4;
   }
 
   .fade-in-paragraph {
@@ -145,7 +120,31 @@
 
   .zoom-image {
     width: 180px;
-    margin-top: 280px;
+    margin-top: 100px;
+  }
+}
+
+/* Large Devices (Laptops, 1024px and up) */
+@media (max-width: 1024px) {
+  .intro-container {
+    padding: 0 30px;
+  }
+
+  .animated-text {
+    font-size: 2.5rem;
+  }
+
+  .fade-in-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .hover-effect {
+    font-size: 1.2rem;
+  }
+
+  .zoom-image {
+    width: 200px;
+    margin-top: 200px;
   }
 }
 
@@ -168,11 +167,12 @@
   }
 
   .zoom-image {
-    width: 220px;
-    margin-top: 320px;
+    width: 250px;
+    margin-top: 250px;
   }
 }
 
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #121212;
