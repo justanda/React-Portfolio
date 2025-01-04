@@ -1,4 +1,4 @@
-/* Intro Container */
+/* Base Styles */
 .intro-container {
   display: flex;
   justify-content: center;
@@ -9,6 +9,7 @@
   color: white;
   overflow: hidden;
   animation: background-slide 10s ease infinite;
+  padding: 0 40px; /* Ensure padding for smaller screens */
 }
 
 .intro-content {
@@ -43,61 +44,117 @@
 }
 
 .zoom-image {
-  margin-top: 20px;
-  width: 100px;
+  margin-top: 300px;
+  width: 200px;
   height: auto;
-  animation: zoom-in 2s ease-in-out infinite alternate;
+  cursor: pointer;
+  transform-origin: center;
+  transition: transform 0.13s ease;
 }
 
-@keyframes text-slide {
-  from {
-    transform: translateY(-10px);
-    opacity: 0.8;
-  }
-  to {
-    transform: translateY(10px);
-    opacity: 1;
-  }
+/* Skateboard Animation */
+.skateboard-animate {
+  width: 200px;
+  height: auto;
+  animation: skateboard-move 1s ease-in-out;
+  cursor: pointer;
+  transform-origin: center;
 }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* Media Queries */
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
+/* Small Devices (Mobile Phones, 320px and up) */
+@media (max-width: 480px) {
+  .intro-container {
+    padding: 0 10px;
   }
-  50% {
-    transform: translateY(-15px);
-  }
-}
 
-@keyframes zoom-in {
-  from {
-    transform: scale(1);
+  .animated-text {
+    font-size: 1.5rem;
   }
-  to {
-    transform: scale(1.1);
+
+  .fade-in-paragraph {
+    font-size: 0.9rem;
+  }
+
+  .hover-effect {
+    font-size: 0.9rem;
+  }
+
+  .zoom-image {
+    width: 120px;
+    margin-top: 200px;
   }
 }
 
-@keyframes background-slide {
-  0% {
-    background-position: 0% 50%;
+/* Medium Devices (Tablets, 768px and up) */
+@media (max-width: 768px) {
+  .intro-container {
+    padding: 0 20px;
   }
-  50% {
-    background-position: 100% 50%;
+
+  .animated-text {
+    font-size: 2rem;
   }
-  100% {
-    background-position: 0% 50%;
+
+  .fade-in-paragraph {
+    font-size: 1rem;
+  }
+
+  .hover-effect {
+    font-size: 1rem;
+  }
+
+  .zoom-image {
+    width: 150px;
+    margin-top: 250px;
+  }
+}
+
+/* Large Devices (Laptops, 1024px and up) */
+@media (max-width: 1024px) {
+  .intro-container {
+    padding: 0 30px;
+  }
+
+  .animated-text {
+    font-size: 2.2rem;
+  }
+
+  .fade-in-paragraph {
+    font-size: 1.1rem;
+  }
+
+  .hover-effect {
+    font-size: 1.1rem;
+  }
+
+  .zoom-image {
+    width: 180px;
+    margin-top: 280px;
+  }
+}
+
+/* Extra Large Devices (Desktops, 1440px and up) */
+@media (min-width: 1440px) {
+  .intro-container {
+    padding: 0 50px;
+  }
+
+  .animated-text {
+    font-size: 2.8rem;
+  }
+
+  .fade-in-paragraph {
+    font-size: 1.4rem;
+  }
+
+  .hover-effect {
+    font-size: 1.4rem;
+  }
+
+  .zoom-image {
+    width: 220px;
+    margin-top: 320px;
   }
 }
