@@ -17,8 +17,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formActionURL =
-      "https://formsubmit.co/03f137935826dc63b17966b00301707e";
+    const formActionURL = "https://formsubmit.co/miranda.justin93@gmail.com";
 
     try {
       const response = await fetch(formActionURL, {
