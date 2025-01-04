@@ -1,50 +1,114 @@
-.project-card {
-  height: 450px; /* Set a consistent height for all cards */
-  width: 100%; /* Allow cards to be responsive */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  border-radius: 10px; /* Rounded corners */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+/* General Styling */
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: #202020;
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #f9f9fa
+  ); /* Subtle gradient */
 }
 
-.project-image {
-  height: 300px; /* Fixed height for images */
-  object-fit: cover; /* Ensure images fill the space without distortion */
-  border-radius: 20px;
+/* Project Container */
+.project-container {
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffffff, #f9f9fa);
 }
 
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  color: #367389; /* Brand primary color */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+}
+
+/* Project Cards */
 .project-card {
-  height: 500px; /* Set consistent height for the card */
-  width: 100%; /* Responsive width */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  border-radius: 10px; /* Rounded corners */
+  height: 100%; /* Ensure cards are consistent */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 20px; /* Smooth rounded corners */
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column; /* Vertical stacking */
   justify-content: space-between; /* Space items evenly */
   align-items: center; /* Center items horizontally */
-  padding: 20px; /* Add internal spacing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover */
+  overflow: hidden; /* Ensure content stays inside */
 }
 
+.project-card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Project Image */
+.project-image {
+  width: 100%; /* Full width of the card */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/* Card Body */
+.project-card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #367389; /* Brand color */
+  margin-bottom: 10px;
+}
+
+.project-card .card-text {
+  font-size: 1rem;
+  color: #202020; /* Darker text for readability */
+  margin-bottom: 15px;
+}
+
+/* Project Link Button */
 .project-card .project-link {
-  display: inline-block; /* Ensure button has intrinsic size */
-  padding: 10px 20px; /* Add consistent padding */
-  font-size: 16px; /* Readable font size */
-  font-weight: 500; /* Medium boldness */
-  color: white; /* White text for contrast */
-  background-color: #007bff; /* Bootstrap primary color */
-  border: none; /* Remove default borders */
-  border-radius: 25px; /* Rounded edges */
-  text-decoration: none; /* Remove underline */
-  transition: all 0.3s ease; /* Smooth hover effect */
-  text-align: center; /* Center text */
-  margin-top: auto; /* Push the button to the bottom of the card */
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #367389; /* Brand primary color */
+  border: none;
+  border-radius: 30px; /* Smooth rounded button */
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .project-card .project-link:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-  display: inline-block; /* Ensure button has intrinsic size */
-  align-items: center /* Center items horizontally */;
+  background-color: #202020; /* Brand secondary color */
+  transform: translateY(-3px);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  transform: translateY(-3px); /* Lift effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .project-image {
+    height: 150px;
+  }
+
+  .project-card .card-title {
+    font-size: 1.3rem;
+  }
+
+  .project-card .card-text {
+    font-size: 0.9rem;
+  }
+
+  .project-card .project-link {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
 }

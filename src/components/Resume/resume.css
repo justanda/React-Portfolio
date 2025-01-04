@@ -1,92 +1,123 @@
+/* General Page Layout */
+.resumeContainer {
+  padding: 2rem;
+  background-color: white; /* Clean white background */
+  font-family: "Nunito Sans", sans-serif;
+  color: #202020; /* Dark text for readability */
+}
+
+/* Section Titles */
 .sectionTitle {
-  font-size: 50px;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: black;
-  margin-bottom: 50px;
-  font-family: "Amatic SC";
+  color: #367389; /* Brand color */
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
+
+/* Cards */
 #Card1 {
-  border-radius: 30px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border: 2px solid #367389; /* Border in brand color */
+  border-radius: 20px; /* Rounded corners */
   padding: 20px;
-  width: 100%;
-  font-family: "Amatic SC";
-  margin-bottom: 80px;
-  align-items: left;
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 #Card1:hover {
-  background-color: transparent;
-  border-radius: 30px;
-  color: black;
-  padding: 15px;
-  width: 90%;
-  font-family: "Nunito Sans";
-  transition: 0.5s;
-  .cardSubtitle {
-    color: green;
-  }
+  transform: translateY(-5px); /* Subtle hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #367389; /* Brand color for titles */
+}
+
+.cardSubtitle {
+  font-size: 1rem;
+  color: #202020;
+  font-weight: 500;
 }
 
 .cardText {
-  font-size: 20px;
-  color: green;
+  font-size: 1rem;
+  color: #202020;
+  line-height: 1.6;
 }
-.cardTitle {
-  font-size: 70px;
-  font-weight: bold;
-  color: black;
+
+/* Skills Section */
+.skillsSection h2 {
+  color: #202020;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
-.cardSubtitle {
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
+
+/* Progress Bar */
+.progressBar {
+  background-color: #202020; /* Dark background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  height: 1.5rem; /* Thicker bar */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3); /* Inner shadow for depth */
 }
-.cardText {
-  font-size: 20px;
-  color: black;
-}
-.cardRed {
-  background-color: "transparent";
-  border-radius: 30px;
-  padding: 20px;
-  width: 50%;
-  font-family: "Amatic SC";
-  margin-bottom: 80px;
-  align-items: left;
-}
-.cardRed:hover {
-  background-color: #b9102f;
+
+.progress-bar {
+  background: linear-gradient(90deg, #367389, #202020); /* Smooth gradient */
   color: white;
-  border-radius: 30px;
-  padding: 15px;
-  width: 90%;
-  font-family: "Nunito Sans";
-  transition: 0.5s;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Slight text shadow for readability */
+  border-radius: 10px; /* Match outer container */
 }
-.cardBlue {
-  background-color: "transparent";
-  border-radius: 30px;
-  padding: 20px;
-  width: 50%;
-  font-family: "Amatic SC";
-  margin-bottom: 80px;
-  align-items: left;
-}
-.cardBlue:hover {
-  background-color: #1610a8;
-  color: white;
-  border-radius: 30px;
-  padding: 15px;
-  width: 90%;
-  font-family: "Nunito Sans";
-  transition: 0.5s;
-}
+
+/* Download Button */
 .downloadButton {
-  background-color: #b9102f;
+  background: radial-gradient(circle at 50% 50%, #367389, #1d1c1c);
   color: white;
   border-radius: 30px;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.downloadButton:hover {
+  background-color: #202020; /* Darken on hover */
+  transform: scale(1.05); /* Slight enlarge */
+}
+
+.downloadButton:active {
+  background-color: #1a1a1a; /* Even darker when pressed */
+  transform: scale(0.95); /* Shrink slightly */
+}
+
+/* Education Cards */
+.cardRed {
+  background-color: #3673896a; /* Soft red for education section */
+  border-radius: 20px;
   padding: 20px;
-  width: 20%;
-  font-family: "Amatic SC";
-  margin-bottom: 80px;
-  align-items: left;
+  border-left: 5px solid #4c4c4c; /* Accent border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
+}
+
+.cardRedBody {
+  font-size: 1rem;
+  color: #202020;
+  line-height: 1.6;
+  margin-left: 20px;
+}
+.cardRed :hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
 }

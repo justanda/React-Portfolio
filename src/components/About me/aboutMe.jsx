@@ -6,10 +6,12 @@ import aboutme from "../../assets/images/aboutme.jpeg";
 function AboutMe() {
   return (
     <Container className="about-me-container">
+      {/* Profile Image */}
       <img className="profile-image" src={aboutme} alt="Justin Miranda" />
 
+      {/* About Me Card */}
       <div className="about-me-card">
-        <h2>About Me</h2>
+        <h2 className="aboutTitle">About Me</h2>
         <p>
           Passionate and driven software developer with a background in business
           development and digital media. Recently completed a coding bootcamp at
@@ -22,6 +24,7 @@ function AboutMe() {
         </p>
       </div>
 
+      {/* Resume Button */}
       <Button
         className="resume-button"
         href="https://docs.google.com/document/d/1Co4eJePIo_3j5ZAtFUbz1fvwmZv8qyW1cIy_OqYuWwQ/edit?usp=sharing"

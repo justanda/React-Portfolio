@@ -1,35 +1,39 @@
 /* General Gallery Styling */
-/* Fallback Image Styling */
-.fallback-image {
-  max-width: 400px; /* Restrict maximum size for a clean look */
-  width: 100%; /* Responsive width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Rounded corners for a modern look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  object-fit: cover; /* Ensure the image scales proportionally */
-  margin: 0 auto; /* Center the image horizontally */
-  display: block; /* Ensure image takes up only necessary space */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-}
-
-.fallback-image:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
 .travel-gallery {
   padding: 2rem;
   text-align: center;
-  background-color: #f8f9fa;
+  background: linear-gradient(to bottom, #ffffff, #f9f9fa);
   border-radius: 8px;
   align-items: center;
+  font-family: "Nunito Sans", sans-serif;
 }
 
+/* Gallery Title */
 .gallery-title {
-  font-size: 2rem;
-  color: #007bff;
+  font-size: 2.5rem;
+  color: #367389; /* Brand primary color */
   margin-bottom: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Fallback Image Styling */
+.fallback-image {
+  max-width: 50%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fallback-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Card Styling */
@@ -37,6 +41,7 @@
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1rem;
 }
 
 .photo-card:hover {
@@ -48,25 +53,36 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
 }
 
 /* Button Styling */
 .load-more-button {
   margin-top: 2rem;
-  background-color: #007bff;
-  color: #fff;
+  background: linear-gradient(90deg, #367389, #202020);
+  color: white;
   border: none;
   padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  font-size: 1rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .load-more-button:hover {
-  background-color: #0056b3;
-  color: #fff;
+  background: linear-gradient(90deg, #202020, #367389);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Enlarged Image Styling */
+.enlarged-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Adjustments */
@@ -74,5 +90,13 @@
   .photo-card .gallery-image {
     height: 150px;
   }
-  /* Fallback Image Styling */
+
+  .gallery-title {
+    font-size: 2rem;
+  }
+
+  .load-more-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
 }

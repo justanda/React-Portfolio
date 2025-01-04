@@ -90,7 +90,7 @@
 
   .zoom-image {
     width: 240px;
-    margin-top: 60px; /* Bring skateboard closer to the content */
+    margin-bottom: 30%; /* Bring skateboard closer to the content */
   }
 
   .enter-button {

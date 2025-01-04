@@ -13,14 +13,14 @@ const projects = [
   {
     title: "Employee Database",
     description:
-      "A employee database that allows you to view and manage employees.",
+      "An employee database that allows you to view and manage employees.",
     image: img2,
     link: "https://github.com/justanda",
   },
   {
-    title: "Vehichle Generator",
+    title: "Vehicle Generator",
     description:
-      "A budget tracker that allows you to track your expenses and income.",
+      "A vehicle generator that allows you to simulate and create vehicles.",
     image: img1,
     link: "https://github.com/justanda/Project-0",
   },
@@ -33,18 +33,19 @@ const projects = [
   },
   {
     title: "Weather Dashboard",
-    description: "A work day scheduler that allows you to plan your day.",
+    description:
+      "A weather dashboard for viewing current and forecasted weather.",
     image: img4,
     link: "https://github.com/justanda/Vehicle-Generator-2024",
   },
   {
     title: "Candidate Search",
-    description: "A candidate search that allows you to search for candidates.",
+    description: "A platform for searching and filtering job candidates.",
     image: img5,
     link: "https://github.com/justanda/Candidate-Search",
   },
   {
-    title: "Penny Pinchers Alpha",
+    title: "Penny Pinchers Alpha (React)",
     description:
       "Refactored to React, this ecommerce site allows you to view items and purchase them.",
     image: img6,
@@ -54,7 +55,8 @@ const projects = [
 
 function Projects() {
   return (
-    <Container>
+    <Container className="project-container">
+      <h2 className="section-title">My Projects</h2>
       <Row>
         {projects.map((project, index) => (
           <Col lg={6} key={index}>
@@ -66,14 +68,15 @@ function Projects() {
                 className="project-image"
               />
               <Card.Body>
-                <Card.Title>{project.title}</Card.Title>
-                <Card.Text>{project.description}</Card.Text>
+                <Card.Title className="card-title">{project.title}</Card.Title>
+                <Card.Text className="card-text">
+                  {project.description}
+                </Card.Text>
                 <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="project-link"
-                  style={{ display: project.link ? "block" : "none" }}
                 >
                   View Project
                 </a>

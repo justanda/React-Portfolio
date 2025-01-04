@@ -74,15 +74,36 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
+                rows={5}
                 required
               />
             </Form.Group>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            <Button type="submit">Submit</Button>
           </Form>
         </Col>
       </Row>
+      <div className="social-media-section">
+        <h3>Follow Me</h3>
+        <div className="social-icons">
+          <a
+            href="https://github.com/yourprofile"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/yourprofile"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:your-email@example.com">
+            <i className="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
     </Container>
   );
 };
