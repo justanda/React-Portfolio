@@ -26,21 +26,34 @@
   font-size: 1.2rem;
   animation: fade-in 2s ease-in-out;
 }
-
 .enter-button {
-  margin-top: 20px;
+  background: linear-gradient(90deg, #367389, #202020); /* Brand gradient */
+  color: white; /* Contrasting text color */
+  font-size: 1.2rem; /* Slightly larger text */
+  font-weight: bold; /* Emphasize the button text */
+  text-transform: uppercase; /* Consistent with other buttons */
+  padding: 12px 30px; /* Comfortable padding for larger buttons */
+  border-radius: 30px; /* Rounded edges for modern look */
+  border: none; /* Clean look */
+  cursor: pointer; /* Pointer to indicate it's clickable */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover and focus */
 }
 
-.hover-effect {
-  font-size: 1.2rem;
-  padding: 10px 25px;
-  border-radius: 25px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.enter-button:hover {
+  background: linear-gradient(90deg, #202020, #367389); /* Reverse gradient */
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
 }
 
-.hover-effect:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+.enter-button:active {
+  background: #1a1a1a; /* Slightly darker for active state */
+  transform: scale(0.98); /* Slight shrink on press */
+}
+
+.enter-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0px 0px 10px rgba(54, 115, 137, 0.5); /* Glow effect */
 }
 
 .zoom-image {

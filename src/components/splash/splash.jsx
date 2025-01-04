@@ -35,11 +35,7 @@ const Intro = () => {
           Discover my projects and skills by entering below.
         </p>
         <a href="/about">
-          <Button
-            className="enter-button hover-effect"
-            variant="primary"
-            size="lg"
-          >
+          <Button className="enter-button" variant="primary" size="lg">
             Enter
           </Button>
         </a>
