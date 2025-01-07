@@ -44,7 +44,8 @@ const TravelGallery = () => {
 
   return (
     <Container className="travel-gallery">
-      <h2 className="gallery-title">Travel Photo Gallery</h2>
+      <h2 className="gallery-title">Travel Photography</h2>
+      <p>All photos were taken by me..Thank you</p>
       {gallery.length > 0 ? (
         <div className="d-flex flex-wrap justify-content-center">
           {gallery.map((photo, index) => (

@@ -42,7 +42,7 @@ const Contact = () => {
 
   return (
     <Container className="contact-page">
-      <h2>Contact Me</h2>
+      <h2>Give me a shout</h2>
       <Row>
         <Col md={6} className="mx-auto">
           <Form onSubmit={handleSubmit}>
@@ -82,7 +82,7 @@ const Contact = () => {
         </Col>
       </Row>
       <div className="social-media-section">
-        <h3>Follow Me</h3>
+        {/* <h3>Follow Me</h3> */}
         <div className="social-icons">
           <a
             href="https://github.com/yourprofile"

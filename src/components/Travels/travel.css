@@ -2,7 +2,8 @@
 .travel-gallery {
   padding: 2rem;
   text-align: center;
-  background: linear-gradient(to bottom, #ffffff, #f9f9fa);
+    
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
   border-radius: 8px;
   align-items: center;
   font-family: "Nunito Sans", sans-serif;
@@ -11,6 +12,8 @@
 /* Gallery Title */
 .gallery-title {
   font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(91, 182, 156, 0.931);
+  text-overflow: ellipsis;
   color: #367389; /* Brand primary color */
   margin-bottom: 1.5rem;
   font-weight: bold;
@@ -75,6 +78,7 @@
   background: linear-gradient(90deg, #202020, #367389);
   transform: translateY(-3px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px -2px 4px rgba(40, 191, 197, 0.931);
 }
 
 /* Modal Enlarged Image Styling */
