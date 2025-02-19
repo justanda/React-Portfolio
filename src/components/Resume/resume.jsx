@@ -8,6 +8,7 @@ import {
   Button,
 } from "react-bootstrap";
 import resume from "../../assets/Resume.pdf";
+// import resume from "../../assets/JustinMirandaResume.pdf";
 import "./resume.css";
 
 const Resume = () => {
