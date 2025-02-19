@@ -7,8 +7,9 @@ import {
   ProgressBar,
   Button,
 } from "react-bootstrap";
-import resume from "../../assets//Resume.pdf";
+
 import "./resume.css";
+import ResumePage from "../../pages/resume";
 
 const Resume = () => {
   const skills = [
@@ -81,8 +82,8 @@ const Resume = () => {
         <Col>
           <Button
             className="downloadButton"
-            href={resume}
-            download="JustinMirandaResume.pdf"
+            href={"Justin_Miranda_Resume.pdf"}
+            download="Justin_Miranda_Resume.pdf"
           >
             Download Resume
           </Button>
