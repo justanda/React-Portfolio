@@ -7,7 +7,7 @@ import {
   ProgressBar,
   Button,
 } from "react-bootstrap";
-import resume from "../../assets/resume.pdf";
+import resume from "../../assets/JustinMirandaResume.pdf";
 import "./resume.css";
 
 const Resume = () => {
@@ -82,7 +82,7 @@ const Resume = () => {
           <Button
             className="downloadButton"
             href={resume}
-            download="resume.pdf"
+            download="JustinMirandaResume.pdf"
           >
             Download Resume
           </Button>

@@ -63,6 +63,7 @@
   cursor: pointer;
   transform-origin: center;
   transition: transform 0.3s ease-in-out;
+  perspective: 1000px;
 }
 
 /* Skateboard Animation */
@@ -72,6 +73,7 @@
   animation: skateboard-move 1s ease-in-out;
   cursor: pointer;
   transform-origin: center;
+  perspective: 1000px;
 }
 
 /* Responsive Design */
