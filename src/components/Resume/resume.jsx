@@ -82,10 +82,12 @@ const Resume = () => {
         <Col>
           <Button
             className="downloadButton"
-            href={"Justin_Miranda_Resume.pdf"}
-            download="Justin_Miranda_Resume.pdf"
+            href="https://docs.google.com/document/d/1Co4eJePIo_3j5ZAtFUbz1fvwmZv8qyW1cIy_OqYuWwQ/edit?usp=sharing"
+            target="_blank"
+            size="lg"
+            variant="primary"
           >
-            Download Resume
+            View Resume
           </Button>
         </Col>
       </Row>
