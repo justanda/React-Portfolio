@@ -43,7 +43,7 @@ function AboutMe() {
 
             <div className="social-icons">
               <a
-                href="https://github.com/"
+                href="https://github.com/justanda"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon"
@@ -51,7 +51,7 @@ function AboutMe() {
                 <i className="fab fa-github"></i>
               </a>
               <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/feed/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon"
@@ -59,7 +59,7 @@ function AboutMe() {
                 <i className="fab fa-linkedin"></i>
               </a>
               <a
-                href="https://twitter.com/"
+                href="https://x.com/justimiran"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon"
