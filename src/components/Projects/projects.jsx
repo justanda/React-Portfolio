@@ -24,20 +24,9 @@ const projects = [
     technologies: ["React", "JavaScript", "Bootstrap", "RESTful API"],
     featured: true,
   },
+
   {
     id: 2,
-    title: "Three.js Portfolio",
-    description:
-      "Interactive portfolio built with Three.js, showcasing my projects in a 3D environment.",
-    image: img3,
-    link: "https://justinthreeport.netlify.app/index.html",
-    github: "https://github.com/justanda/threePortfolio",
-    category: "3D Visualization",
-    technologies: ["Three.js", "JavaScript", "WebGL", "HTML5/CSS3"],
-    featured: true,
-  },
-  {
-    id: 3,
     title: "Weather Dashboard",
     description:
       "A responsive weather dashboard for viewing current and forecasted weather data with location search.",
@@ -46,6 +35,18 @@ const projects = [
     github: "https://github.com/justanda/weather-dashboard",
     category: "Web App",
     technologies: ["React", "TypeScript", "Weather API", "Chart.js"],
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Three.js Portfolio",
+    description:
+      "Interactive portfolio built with Three.js, showcasing my projects in a 3D environment.",
+    image: img3,
+    link: "https://justinthreeport.netlify.app/index.html",
+    github: "https://github.com/justanda/threePortfolio",
+    category: "3D Visualization",
+    technologies: ["Three.js", "JavaScript", "WebGL", "HTML5/CSS3"],
     featured: true,
   },
   {
