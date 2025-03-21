@@ -193,6 +193,102 @@ p {
   font-size: 1.5rem;
 }
 
+/* Tab Styles - Ensures consistent active tab styles across pages */
+/* Tab Styles - Ensures consistent active tab styles across pages */
+.nav-tabs .nav-item .nav-link {
+  color: var(--text-primary); /* Default color for unselected tabs */
+  background-color: transparent; /* Transparent background for all tabs */
+  border: none; /* Remove any borders */
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: var(--primary-color); /* Active tab background */
+  color: white; /* Text color for active tab */
+  border-color: var(--primary-color); /* Tab border to match active color */
+}
+
+.nav-tabs .nav-link:hover {
+  color: var(--primary-color); /* Change text color on hover */
+  background-color: rgba(
+    54,
+    115,
+    137,
+    0.1
+  ); /* Slight hover effect for better UX */
+}
+
+/* Hover and Active Category Badges */
+/* Category Badges for Frontend and Backend */
+.category-badge {
+  background-color: var(
+    --secondary-color
+  ); /* Default background for all categories */
+  color: var(--bg-primary); /* Default text color */
+  border-radius: var(--border-radius-sm);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease,
+    color var(--transition-speed) ease;
+  margin: 0.5rem;
+}
+
+/* Hover Effect for Category Badges */
+.category-badge:hover {
+  background-color: var(--primary-color);
+  color: white; /* Change text color on hover */
+}
+
+/* Active Category Style */
+.category-badge.active {
+  background-color: var(--primary-color); /* Active category background */
+  color: white; /* Active text color */
+}
+
+/* Frontend Category Color */
+.category-badge.frontend {
+  background-color: var(--primary-color);
+  color: white; /* Frontend category text */
+}
+
+/* Backend Category Color */
+.category-badge.backend {
+  background-color: var(--secondary-color);
+  color: white; /* Backend category text */
+}
+
+/* Selected Category (Active) */
+.category-badge.selected {
+  background-color: var(--gradient-primary);
+  color: white;
+}
+
+/* Styling for Category Badges in the Skills Tab */
+.skills-categories .category-badge {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+}
+
+.skills-categories .category-badge.me-2 {
+  margin-right: var(--spacing-sm);
+}
+
+/* Uniform Look for Progress Bars and Other Elements */
+.progress-bar-animated {
+  background-color: var(--secondary-color);
+}
+
+.progress-bar-animated > .progress-bar {
+  background-color: var(--primary-color);
+}
+
+/* Card Hover Effects */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px var(--shadow-hover); /* Ensuring consistent shadow */
+}
+
 /* Responsive Media Queries */
 @media (max-width: 992px) {
   .section-title {

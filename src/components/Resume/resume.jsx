@@ -15,6 +15,7 @@ import "./resume.css";
 
 const Resume = () => {
   const [activeTab, setActiveTab] = useState("experience");
+  const [activeCategory, setActiveCategory] = useState("All");
 
   const skills = [
     { skill: "HTML", percentage: 60, category: "Frontend" },
@@ -94,6 +95,10 @@ const Resume = () => {
     );
   };
 
+  const handleCategoryClick = (category) => {
+    setActiveCategory(category); // Update active category
+  };
+
   return (
     <Container className="resumeContainer">
       <Tabs
@@ -143,43 +148,70 @@ const Resume = () => {
           <Row className="justify-content-center">
             <Col md={10}>
               <div className="skills-categories mb-4">
-                <Badge pill bg="primary" className="me-2 category-badge">
+                <Badge
+                  pill
+                  bg={activeCategory === "All" ? "primary" : "light"}
+                  className={`category-badge ${
+                    activeCategory === "All" ? "active" : ""
+                  }`}
+                  onClick={() => handleCategoryClick("All")}
+                >
                   All
                 </Badge>
-                <Badge pill bg="secondary" className="me-2 category-badge">
+                <Badge
+                  pill
+                  bg={activeCategory === "Frontend" ? "primary" : "light"}
+                  className={`category-badge frontend ${
+                    activeCategory === "Frontend" ? "active" : ""
+                  }`}
+                  onClick={() => handleCategoryClick("Frontend")}
+                >
                   Frontend
                 </Badge>
-                <Badge pill bg="secondary" className="me-2 category-badge">
+                <Badge
+                  pill
+                  bg={activeCategory === "Backend" ? "primary" : "light"}
+                  className={`category-badge backend ${
+                    activeCategory === "Backend" ? "active" : ""
+                  }`}
+                  onClick={() => handleCategoryClick("Backend")}
+                >
                   Backend
                 </Badge>
               </div>
 
-              {skills.map((skill, index) => (
-                <motion.div
-                  key={skill.skill}
-                  initial="hidden"
-                  animate="visible"
-                  variants={cardVariants}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                >
-                  <Row className="skill-row align-items-center mb-3">
-                    <Col md={3} className="skill-name">
-                      <span>{skill.skill}</span>
-                      <small className="text-muted d-block">
-                        {skill.category}
-                      </small>
-                    </Col>
-                    <Col md={9}>
-                      <ProgressBar
-                        className="progress-bar-animated"
-                        now={skill.percentage}
-                        label={`${skill.percentage}%`}
-                        variant={skill.percentage > 50 ? "success" : "info"}
-                      />
-                    </Col>
-                  </Row>
-                </motion.div>
-              ))}
+              {skills
+                .filter(
+                  (skill) =>
+                    activeCategory === "All" ||
+                    skill.category === activeCategory
+                )
+                .map((skill, index) => (
+                  <motion.div
+                    key={skill.skill}
+                    initial="hidden"
+                    animate="visible"
+                    variants={cardVariants}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                  >
+                    <Row className="skill-row align-items-center mb-3">
+                      <Col md={3} className="skill-name">
+                        <span>{skill.skill}</span>
+                        <small className="text-muted d-block">
+                          {skill.category}
+                        </small>
+                      </Col>
+                      <Col md={9}>
+                        <ProgressBar
+                          className="progress-bar-animated"
+                          now={skill.percentage}
+                          label={`${skill.percentage}%`}
+                          variant={skill.percentage > 50 ? "success" : "info"}
+                        />
+                      </Col>
+                    </Row>
+                  </motion.div>
+                ))}
             </Col>
           </Row>
         </Tab>

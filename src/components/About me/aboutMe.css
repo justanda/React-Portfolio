@@ -1,7 +1,46 @@
+/* AboutMe CSS with light/dark theme support */
+:root {
+  /* Light mode (default) */
+  --primary-color: #0d6efd;
+  --primary-hover: #0b5ed7;
+  --text-primary: #333;
+  --text-secondary: #495057;
+  --text-muted: #6c757d;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --border-color: #dee2e6;
+  --card-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  --card-shadow-hover: 0 15px 25px rgba(0, 0, 0, 0.1);
+  --overlay-bg: rgba(0, 0, 0, 0.7);
+  --social-icon-bg: white;
+  --social-icon-color: #333;
+}
+
+[data-theme="dark"] {
+  --primary-color: #3b82f6;
+  --primary-hover: #2563eb;
+  --text-primary: #e5e7eb;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
+  --bg-primary: #1f2937;
+  --bg-secondary: #111827;
+  --bg-tertiary: #374151;
+  --border-color: #4b5563;
+  --card-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --card-shadow-hover: 0 15px 25px rgba(0, 0, 0, 0.3);
+  --overlay-bg: rgba(0, 0, 0, 0.8);
+  --social-icon-bg: #374151;
+  --social-icon-color: #e5e7eb;
+}
+
 .about-me-container {
   padding: 4rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Profile Image Styling */
@@ -10,7 +49,8 @@
   display: inline-block;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--card-shadow-hover);
+  transition: box-shadow 0.3s ease;
 }
 
 .profile-image {
@@ -49,39 +89,42 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: var(--social-icon-bg);
   border-radius: 50%;
-  color: #333;
+  color: var(--social-icon-color);
   font-size: 1.2rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .social-icon:hover {
   transform: translateY(-5px);
-  color: #0d6efd;
+  color: var(--primary-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Content Styling */
 .about-me-content {
   padding: 2rem;
-  background-color: #f8f9fa;
+  background-color: var(--bg-secondary);
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--card-shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .name-title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 .profession-subtitle {
   font-size: 1.3rem;
-  color: #0d6efd;
+  color: var(--primary-color);
   margin-bottom: 1.5rem;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 /* Tab Navigation */
@@ -90,8 +133,9 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 1rem;
+  transition: border-color 0.3s ease;
 }
 
 .tab-button {
@@ -100,25 +144,30 @@
   border: none;
   border-radius: 4px;
   font-weight: 500;
-  color: #495057;
+  color: var(--text-secondary);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
 
 .tab-button:hover {
-  color: #0d6efd;
+  color: var(--primary-color);
   background-color: rgba(13, 110, 253, 0.1);
 }
 
+[data-theme="dark"] .tab-button:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
 .tab-button.active {
-  color: #fff;
-  background-color: #0d6efd;
+  color: white;
+  background-color: var(--primary-color);
 }
 
 .tab-content {
   min-height: 150px;
   line-height: 1.7;
-  color: #495057;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
 }
 
 /* Tech Stack */
@@ -129,7 +178,8 @@
 .tech-stack-title {
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #495057;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 .tech-icons {
@@ -143,16 +193,24 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon-container:hover {
+  transform: translateY(-3px);
 }
 
 .tech-icon-container i {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
 }
 
 .tech-name {
   font-size: 0.75rem;
-  color: #6c757d;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
 }
 
 /* Action Buttons */
@@ -168,10 +226,30 @@
   font-weight: 500;
   border-radius: 50px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.resume-button:hover,
+.resume-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.resume-button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
 .contact-button:hover {
+  background-color: var(--primary-color);
+  color: white;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -180,11 +258,16 @@
 .contact-modal .modal-content {
   border-radius: 12px;
   border: none;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-modal .modal-header {
   border-bottom: none;
   padding: 1.5rem 1.5rem 0.5rem;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 .contact-modal .modal-body {
@@ -194,12 +277,15 @@
 .contact-form .form-control {
   border-radius: 8px;
   padding: 0.75rem 1rem;
-  border: 1px solid #ced4da;
-  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.3s ease, background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .contact-form .form-control:focus {
-  border-color: #0d6efd;
+  border-color: var(--primary-color);
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 
