@@ -6,12 +6,6 @@ function NavScrollExample() {
   return (
     <div>
       <ScrollIndicator />
-      {/* 
-      <div className="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my work, projects, and contact information</p>
-      </div> */}
-
       <Navbar expand="lg" className="navbar">
         <Container fluid>
           <Navbar.Brand href="/" className="navbar-brand">
