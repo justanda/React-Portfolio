@@ -8,7 +8,6 @@ import Home from "./pages/home";
 import ResumePage from "./pages/resume";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Travels from "./pages/travels";
-``;
 import "./App.css";
 
 // import ContactPage from "./pages/contact";
